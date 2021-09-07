@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const ShortUrl = require('./models/shortUrl');
 const app=express();
 
-//mongodb+srv://admin-yash:123Test123@cluster0.vhc8o.mongodb.net/urlShortener
+//mongodb+srv://admin-yash:<password>@cluster0.vhc8o.mongodb.net/urlShortener
 //mongodb://localhost/urlShortener
 
-mongoose.connect('mongodb+srv://admin-yash:123Test123@cluster0.vhc8o.mongodb.net/urlShortener', {
+mongoose.connect('mongodb+srv://admin-yash:<password>@cluster0.vhc8o.mongodb.net/urlShortener', {
   useNewUrlParser: true, useUnifiedTopology: true    //useUnifiedTopology will avoiding deprecated error.
 })
 
